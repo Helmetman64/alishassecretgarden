@@ -1,5 +1,3 @@
-// app/components/Navigation/HamburgerMenu.tsx
-
 "use client";
 
 import { useState } from "react";
