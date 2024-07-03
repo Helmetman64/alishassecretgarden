@@ -21,10 +21,7 @@ const HamburgerMenu: React.FC = () => {
     <div className={styles.pageWrapper}>
       <div className={styles.navWrapper}>
         <nav className={styles.navbar}>
-          <Link href="/" onClick={closeMenu}>
-            <Image src={logo} alt="Logo" width={200} height={115} />
-          </Link>
-
+          <Image src={logo} alt="Logo" width={200} height={115} />
           <div
             className={`${styles.menuToggle} ${isOpen ? styles.isActive : ""}`}
             onClick={toggleMenu}
@@ -36,6 +33,11 @@ const HamburgerMenu: React.FC = () => {
             <span className={styles.bar}></span>
           </div>
           <ul className={`${styles.nav} ${isOpen ? styles.mobileNav : ""}`}>
+            <li className={styles.navItem}>
+              <Link href="/" onClick={closeMenu}>
+                Home
+              </Link>
+            </li>
             <li className={styles.navItem}>
               <Link href="/all-items" onClick={closeMenu}>
                 All Items

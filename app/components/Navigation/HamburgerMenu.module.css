@@ -137,7 +137,7 @@
     flex-direction: column;
     position: fixed;
     justify-content: start;
-    top: 10%;
+    top: 115px;
     background-color: #ffecc4;
     width: 100%;
     height: calc(100vh - 55px);
