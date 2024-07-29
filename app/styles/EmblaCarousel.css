@@ -61,6 +61,12 @@
     flex: 0 0 15%;
   }
 }
+@media (max-width: 768px) {
+  .embla {
+    --slide-height: 12rem;
+    --slide-width: 90%;
+  }
+}
 .embla-thumbs__slide__number {
   border-style: solid;
   border-radius: 1.8rem;
