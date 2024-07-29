@@ -37,6 +37,11 @@ const HamburgerMenu: React.FC = () => {
           </div>
           <ul className={`${styles.nav} ${isOpen ? styles.mobileNav : ""}`}>
             <li className={styles.navItem}>
+              <Link href="/" onClick={closeMenu}>
+                Home
+              </Link>
+            </li>
+            <li className={styles.navItem}>
               <Link href="/all-items" onClick={closeMenu}>
                 All Items
               </Link>
