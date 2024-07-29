@@ -1,4 +1,3 @@
-
 /* BASIC SETUP */
 
 .pageWrapper {
@@ -11,8 +10,8 @@
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
+  z-index: 2;
 }
-
 
 /* NAVIGATION */
 
@@ -28,7 +27,6 @@
   display: grid;
   grid-template-columns: repeat(6,1fr);
   justify-self: end;
-  
 }
 
 .navItem a {
@@ -45,7 +43,7 @@
 
 /* MOBILE MENU & ANIMATION */
 
-.menuToggle .bar{
+.menuToggle .bar {
   width: 25px;
   height: 3px;
   background-color: #3f3f3f;
@@ -60,22 +58,22 @@
   display: none;
 }
 
-.menuToggle:hover{
+.menuToggle:hover {
   cursor: pointer;
 }
 
-.menuToggle.isActive .bar:nth-child(2){
+.menuToggle.isActive .bar:nth-child(2) {
   opacity: 0;
 }
 
-.menuToggle.isActive .bar:nth-child(1){
+.menuToggle.isActive .bar:nth-child(1) {
   -webkit-transform: translateY(8px) rotate(45deg);
   -ms-transform: translateY(8px) rotate(45deg);
   -o-transform: translateY(8px) rotate(45deg);
   transform: translateY(8px) rotate(45deg);
 }
 
-.menuToggle.isActive .bar:nth-child(3){
+.menuToggle.isActive .bar:nth-child(3) {
   -webkit-transform: translateY(-8px) rotate(-45deg);
   -ms-transform: translateY(-8px) rotate(-45deg);
   -o-transform: translateY(-8px) rotate(-45deg);
@@ -85,44 +83,44 @@
 /* KEYFRAME ANIMATIONS */
 
 @-webkit-keyframes gradbar {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
 }
 
 @-moz-keyframes gradbar {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
 }
 
 @keyframes gradbar {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
 }
 
 /* Media Queries */
 
-  /* Mobile Devices - Phones/Tablets */
+/* Mobile Devices - Phones/Tablets */
 
 @media only screen and (max-width: 720px) { 
   .features {
@@ -136,12 +134,14 @@
     display: flex;
     flex-direction: column;
     position: fixed;
+    z-index: 2;
     justify-content: start;
     top: 115px;
     background-color: #ffecc4;
     width: 100%;
     height: calc(100vh - 55px);
-    transform: translate(-101%);
+    transform: translateX(-101%);
+    transition: transform 0.3s ease-out;
     text-align: center;
     overflow: hidden;
   }
@@ -164,8 +164,6 @@
   }
   
   .mobileNav {
-  transform: translate(0%)!important;
-}
-
-  
+    transform: translateX(0%) !important;
+  }
 }

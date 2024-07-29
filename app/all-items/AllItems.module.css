@@ -1,0 +1,28 @@
+.card {
+    top: 132px;
+    left: 20px;
+    width: 342px;
+    height: 282px;
+    background-color: #f7f5ff;
+    border-radius: 16px;
+    border: 1px solid #aa93f3;
+    box-sizing: border-box;
+  }
+
+  .container {
+    padding: 10px 10px;
+  }
+
+  .itemImg {
+    
+    height: 173px;
+    border-radius: 12px;
+    border: 1px solid #aa93f3;
+    box-sizing: border-box;
+    /* background-image: url(./image.jpeg); */
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  
