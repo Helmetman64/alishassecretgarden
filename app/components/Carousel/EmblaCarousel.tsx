@@ -6,6 +6,7 @@ import { Thumb } from "./EmblaCarouselThumbsButton";
 import Autoplay from "embla-carousel-autoplay";
 import useEmblaCarousel from "embla-carousel-react";
 import "../../styles/EmblaCarousel.css";
+import Link from "next/link";
 
 type PropType = {
   slides: number[];
@@ -69,6 +70,11 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
             ))}
           </div>
         </div>
+      </div>
+      <div className="container">
+        <Link href="/all-items" className="button">
+          View All Items
+        </Link>
       </div>
     </section>
   );
